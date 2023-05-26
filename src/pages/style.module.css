@@ -1,0 +1,11 @@
+@media (max-width: 850px) {
+    .hiddenbar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+}

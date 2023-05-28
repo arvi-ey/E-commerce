@@ -62,9 +62,11 @@ const ProductStructure = (props) => {
                     </div>
                     <div className="flex" >
                         <span className={`font-semibold text-lg`} >Share: </span>
-                        <Image src={facebook} height={100} width={100} className={`h-8 cursor-pointer`} alt="facebook" />
-                        <Image src={whatsapp} height={100} width={100} className={`h-8 cursor-pointer`} alt="facebook" />
-                        <Image src={instagram} height={100} width={100} className={`h-8 cursor-pointer`} alt="facebook" />
+                        <div className={`flex pl-3 gap-4`} >
+                            <Image src={facebook} height={100} width={100} className={`h-8 cursor-pointer w-fit`} alt="facebook" />
+                            <Image src={whatsapp} height={100} width={100} className={`h-8 cursor-pointer w-fit`} alt="facebook" />
+                            <Image src={instagram} height={100} width={100} className={`h-8 cursor-pointer w-fit`} alt="facebook" />
+                        </div>
 
                     </div>
                 </div>

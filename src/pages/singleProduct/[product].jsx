@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import ProductStructure from './ProductStructure';
 import Header from "../Header"
-const product = () => {
+const Product = () => {
     const [value, setValue] = useState([])
-    const oneProduct = useRouter();
-    const Product_id = oneProduct.query.product;
+    const router = useRouter();
+    const Product_id = router.query.product;
     console.log(Product_id);
 
     const fetch_product = () => {
@@ -32,13 +32,16 @@ const product = () => {
                 image={value.thumbnail}
                 detail={value.description}
                 title={value.title}
-                image1={value.images[0]}
-                image2={value.images[1]}
-                image3={value.images[2]}
-                image4={value.images[3]}
+                price={value.price}
+                rating={value.rating}
+                discount={value.discountPercentage}
+            // image1={value.images[0]}
+            // image2={value.images[1]}
+            // image3={value.images[2]}
+            // image4={value.images[3]}
             />
         </>
     )
 }
 
-export default product;
+export default Product;

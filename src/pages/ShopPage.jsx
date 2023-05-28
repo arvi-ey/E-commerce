@@ -29,6 +29,7 @@ const ShopPage = () => {
                     apidata.map((value) => {
                         return (
                             <Shop
+                                key={value.id}
                                 id={value.id}
                                 name={value.title}
                                 price={value.price}
